@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+	<title>LibEtPan</title>
+	<link rel=stylesheet type="text/css" href="c/etpan.css"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf8"/>
+</head>
+<body>
+	<!-- preload -->
+	<img src="i/libetpan.png" style="display:none"/>
+	<img src="i/sample.png" style="display:none"/>
+	<img src="i/misc.png" style="display:none"/>
+	<img src="i/about.png" style="display:none"/>
+	<img src="i/DownloadNormal.png" style="display:none"/>
+	<img src="i/DownloadHover.png" style="display:none"/>
+	<img src="i/DownloadClicked.png" style="display:none"/>
+	<img src="i/GithubNormal.png" style="display:none"/>
+	<img src="i/GithubHover.png" style="display:none"/>
+	<img src="i/GithubClicked.png" style="display:none"/>
+	<img src="i/SocialMailNormal.png" style="display:none"/>
+	<img src="i/SocialMailHover.png" style="display:none"/>
+	<img src="i/SocialMailClicked.png" style="display:none"/>
+	<img src="i/SocialTwitterNormal.png" style="display:none"/>
+	<img src="i/SocialTwitterHover.png" style="display:none"/>
+	<img src="i/SocialTwitterClicked.png" style="display:none"/>
+	<img src="i/EmailNormal.png" style="display:none"/>
+	<img src="i/EmailHover.png" style="display:none"/>
+	<img src="i/EmailClicked.png" style="display:none"/>
+	<img src="i/TwitterNormal.png" style="display:none"/>
+	<img src="i/TwitterHover.png" style="display:none"/>
+	<img src="i/TwitterClicked.png" style="display:none"/>
+	<img src="i/TumblrNormal.png" style="display:none"/>
+	<img src="i/TumblrHover.png" style="display:none"/>
+	<img src="i/TumblrClicked.png" style="display:none"/>
+	<img src="i/LinkedinNormal.png" style="display:none"/>
+	<img src="i/LinkedinHover.png" style="display:none"/>
+	<img src="i/LinkedinClicked.png" style="display:none"/>
+	
+  <!--
+	<div class="boxcontainer">
+		<div class="box boxblue" onclick="location.href='index.html'">
+			<img src="i/libetpan.png"/>
+			<p>
+				<span class="title">LibEtPan</span>
+				<span class="subtitle">mail framework</span>
+			</p>
+		</div>
+		<div class="box boxorange" onclick="location.href='sample.html'">
+			<img src="i/sample.png"/>
+			<p>
+				<span class="title">Sample</span>
+				<span class="subtitle">Process profiling</span>
+			</p>
+		</div>
+		<div class="box boxgray" onclick="location.href='other.html'">
+			<img src="i/misc.png"/>
+			<p>
+				<span class="title">Misc</span>
+				<span class="subtitle">Other projects</span>
+			</p>
+		</div>
+		<div class="box boxgreen" onclick="location.href='about.html'">
+			<img src="i/about.png"/>
+			<p>
+				<span class="title">About</span>
+				<span class="subtitle">my infos</span>
+			</p>
+		</div>
+		<div class="boxcontact">
+			<a class="boxmail" href="mailto:dinh.viet.hoa@gmail.com"></a>
+			<a class="boxtwitter" href="http://twitter.com/dinh_viet_hoa" target="_blank"></a>
+		</div>
+	</div>
+  -->
+    <div class="tabs-container">
+      <div class="tabs">
+        <div class="tabitem"><a href="index.html">About</a></div>
+        <div class="tabitem"><a href="mailcore2.html">MailCore 2</a></div>
+        <div class="tabitem"><a href="libetpan.html">LibEtPan</a></div>
+        <div class="tabitem"><a href="sample.html">Sample</a></div>
+        <div class="tabitem"><a href="other.html">Misc</a></div>
+      </div>
+      <div class="tabs-bottom-gradient">
+      </div>
+    </div>
+	
+	<div class="content">
+		<h1>LibEtPan</h1>
+		
+		<p>
+			The purpose of this mail library is to provide a portable, efficient framework for different kinds of mail access: IMAP, SMTP, POP and NNTP.
+		</p>
+    <p>
+      It provides an API for C language.
+    </p>
+		<p>
+      It's the low-level API used by <a href="http://libmailcore.com">MailCore</a> and <a href="mailcore2.html">MailCore 2</a>.
+    </p>
+    
+		<p>
+			<a href="https://github.com/dinhviethoa/libetpan" target="_blank" class="github">
+				Download at github
+			</a>
+		</p>
+		
+		<hr/>
+		
+		<h2>Examples</h2>
+		
+		<h3>Create a MIME/RFC 2822 message</h3>
+		
+		<ul>
+			<li>
+				<a href="https://github.com/dinhviethoa/libetpan/blob/master/tests/compose-msg.c" target="_blank">
+					compose-msg.c
+				</a>
+				</li>
+			<li>
+				<a href="https://github.com/dinhviethoa/libetpan/blob/master/tests/mime-create.c" target="_blank">
+					mime-create.c
+				</a>
+			</li>
+		</ul>
+		
+		<h3>Download IMAP messages</h3>
+		
+		<ul>
+			<li>
+				<a href="https://github.com/dinhviethoa/libetpan/blob/master/tests/imap-sample.c" target="_blank">
+					imap-sample.c
+				</a>
+			</li>
+		</ul>
+		
+		<h3>Download POP messages</h3>
+		
+		<ul>
+			<li>
+				<a href="https://github.com/dinhviethoa/libetpan/blob/master/tests/pop-sample.c" target="_blank">
+					pop-sample.c
+				</a>
+			</li>
+		</ul>
+		
+		<h3>Send a message via SMTP</h3>
+		
+		<ul>
+			<li>
+				<a href="https://github.com/dinhviethoa/libetpan/blob/master/tests/smtpsend.c" target="_blank">
+					smtpsend.c
+				</a>
+			</li>
+		</ul>
+		
+		<hr/>
+		
+		<h2>Who uses LibEtPan?</h2>
+    <ul>
+      <li>Almost all email app in Mac and iOS AppStore: see <a href="http://libmailcore.com">Mailcore</a></li>
+      <li><a href="https://itunes.apple.com/us/app/cisco-mobile-8.0/id364383393?mt=8">Cisco Mobile for iPhone</a></li>
+      <li><a href="http://claws-mail.org">Claws Mail</a></li>
+      <li><a href="http://www.filemaker.com/products/filemaker-pro/">Filemaker Pro</a></li>
+      <li><a href="https://tools.google.com/dlpage/exchangemigration">Google Apps Migration for Microsoft Exchange</a></li>
+      <li><a href="http://us.playstation.com/psvita/">Playstation Vita Email Application</a></li>
+  		<li><a href="http://code.google.com/p/remail-iphone/">reMail</a> (Acquired by Google in 2010)</li>
+  		<li><a href="http://www.sprw.me">Sparrow</a> (Acquired by Google in 2012)</li>
+    </ul>
+    
+		<h2>Useful links</h2>
+		<ul>
+		<li><a href="http://libmailcore.com">MailCore: An e-mail library for Mac &amp; iOS</a></li>
+		</ul>
+	</div>
+</body>
+</html>
